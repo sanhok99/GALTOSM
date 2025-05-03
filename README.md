@@ -10,4 +10,4 @@ SHA256 checksum value of the zipped artifact is `0971bebeb6eb1a5317f752e63b5ca91
 
 The Github repository also contains a detailed handbook to using our tool GALTOSM and the results (tables and graphs) for your reference.
 
-Note: The subdirectory `Sample_Artifact_GALTOSM` contains some sample files and strctures to help reviewers get an overview, sanity-check, and to check small fragments of the case studies in the paper which are smaller in size and requires less times to compile and model check. It also contains the codes for GALTOSM which can be easily evaluated without requiring the user to download the entire artefact.
+<!-- Note: The subdirectory `Sample_Artifact_GALTOSM` contains some sample files and strctures to help reviewers get an overview, sanity-check, and to check small fragments of the case studies in the paper which are smaller in size and requires less times to compile and model check. It also contains the codes for GALTOSM which can be easily evaluated without requiring the user to download the entire artefact. -->

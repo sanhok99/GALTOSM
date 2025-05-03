@@ -1,5 +1,0 @@
-prob
-	(true)*.(LAST_GOT_SEAT)
-is
-	>= ? 0.0000001
-end prob

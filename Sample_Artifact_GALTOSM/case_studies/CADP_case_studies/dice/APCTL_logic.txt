@@ -1,1 +1,0 @@
-(P=?[(true)_(true)U_(DICE6)(true)])

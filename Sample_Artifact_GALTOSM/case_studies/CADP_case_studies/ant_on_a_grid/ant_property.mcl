@@ -1,5 +1,0 @@
-prob
-	(true)*.(LIVE)
-is
-	>= ? 0.00001
-end prob
