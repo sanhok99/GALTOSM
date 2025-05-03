@@ -1,0 +1,100 @@
+NOTE:
+In this document all logics those which are also given in command line input format in the second line.
+
+APCTL (Action based probabilistic logic)
+=========================================
+logic_type: APCTL
+------------------
+(P=?[(true)_(true)U_("LIVE")(true)])
+(P=?[(true)_(true)U_(\"LIVE\")(true)])
+
+(P=?[(true)_(true)U_("LAST_GOT_SEAT")(true)])
+(P=?[(true)_(true)U_(\"LAST_GOT_SEAT\")(true)])
+
+(P=?[X_tau((true)&(true))])
+(P=?[X_tau((true)&(true))])
+
+(P>0.4[X_(("act1" | "act2"))(true)])
+(P>0.4[X_((\"act1\" | \"act2\"))(true)])
+
+(P=?[(true)_(true)U_("HOME" | "DRUNK")(true)])
+(P=?[(true)_(true)U_(\"HOME\" | \"DRUNK\")(true)])
+
+
+(P=?[(true)_("ATTEMPT" | "SUCCESS_FRAME" | "ACK_FAIL" | "RETRY1" | "RETRY2")U_("SUCCESS_FILE")(true)])
+(P=?[(true)_(\"ATTEMPT\" | \"SUCCESS_FRAME\" | \"ACK_FAIL\" | \"RETRY1\" | \"RETRY2\")U_(\"SUCCESS_FILE\")(true)])
+
+
+
+APCTL* (Action based probabilistic logic)
+=========================================
+logic_type: APCTLS
+------------------
+(P=?[((X(true))&(X_("act1" | "act2")(true)))])
+(P=?[((X(true))&(X_(\"act1\" | \"act2\")(true)))])
+
+(P<=0.65[((true)U(!(X(true))))])
+(P<=0.65[((true)U(!(X(true))))])
+
+(P<=0.65[((X_("a" | !"b")(true))U(!(X(true))))])
+(P<=0.65[((X_(\"a\" | \!\"b\")(true))U(!(X(true))))])
+
+
+APRCTL (Action based probabilistic logic)
+=========================================
+logic_type: APRCTL
+------------------
+(E=?[(P>=1[X_("ONE" | "TWO" | "THREE" | "FOUR" | "FIVE" | "SIX")(true)])])
+(E=?[(P>=1[X_(\"ONE\" | \"TWO\" | \"THREE\" | \"FOUR\" | \"FIVE\" | \"SIX\")(true)])])
+
+(E=?[(!((!(P>=1[X_("LIVE")(true)]))&(!(P>=1[X_("DEAD")(true)]))))])
+(E=?[(!((!(P>=1[X_(\"LIVE\")(true)]))&(!(P>=1[X_(\"DEAD\")(true)]))))])
+
+(E=?[(!((!(P>=1[X_("HOME")(true)]))&(!(P>=1[X_("DRUNK")(true)]))))])
+(E=?[(!((!(P>=1[X_(\"HOME\")(true)]))&(!(P>=1[X_(\"DRUNK\")(true)]))))])
+
+
+PCTL (Action based probabilistic logic)
+=========================================
+logic_type: PCTL
+------------------
+(!("ap"))
+(\!(\"ap\"))
+
+(P<0.24[(true)U("ap1")])
+(P<0.24[(true)U(\"ap1\")])
+
+(P<0.24[(P<0.2[X("ap1")])U("ap2")])
+(P<0.24[(P<0.2[X(\"ap1\")])U(\"ap2\")])
+
+((P<0.24[(true)U("ap1")])|(P<0.24[(P<0.2[X("ap1")])U("ap2")]))
+((P<0.24[(true)U(\"ap1\")])|(P<0.24[(P<0.2[X(\"ap1\")])U(\"ap2\")]))
+
+
+PCTL* (Action based probabilistic logic)
+=========================================
+logic_type: PCTLS
+------------------
+(P<0.24[(X(false))])
+(P<0.24[(X(false))])
+
+(P>=0.14[(("ap1")U("ap2"))])
+(P>=0.14[((\"ap1\")U(\"ap2\"))])
+
+(P=?[((x("ap1"))&(("ap2")U("ap3")))])
+(P=?[((x(\"ap1\"))&((\"ap2\")U(\"ap3\")))])
+
+([P>=0.3[((true)U((!("rep"))&(!("recv"))))]])
+([P>=0.3[((true)U((!(\"rep\"))&(!(\"recv\"))))]])
+
+
+PRCTL (Action based probabilistic logic)
+=========================================
+logic_type: PRCTL
+------------------
+(R=?[(true)])
+(R=?[(true)])
+
+(R=?[(P>0.0[(true)U("ap")])])
+(R=?[(P>0.0[(true)U(\"ap\")])])
+

@@ -1,0 +1,5 @@
+prob
+	(ATTEMPT | SUCCESS_FRAME | ACK_FAIL | RETRY1 | RETRY2)*.(SUCCESS_FILE)
+is
+	 >= ? 0 
+end prob

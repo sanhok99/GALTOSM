@@ -1,0 +1,32 @@
+% The specification is taken from the mCRL2 tool-set examples.
+
+
+map  N:Pos;
+eqn  N=10;
+
+act  last_passenger_has_his_own_seat:Bool;
+     enter_plane:Bool#Bool;
+     enter;
+
+% The parameter everybody_has_his_own_seat indicates that all remaining
+% seats correspond exactly with the places for all passengers that still
+% have to board the plane. Except if the number_of_empty_seats==0. In 
+% that case it indicates whether the last passenger got its own chair.
+
+proc Plane(everybody_has_his_own_seat:Bool, number_of_empty_seats:Int)=
+        (number_of_empty_seats==0)
+             ->last_passenger_has_his_own_seat(everybody_has_his_own_seat).delta
+% b0 is true if the next passengers finds its own seat unoccupied.
+             <>(enter.
+                dist b0:Bool[if(everybody_has_his_own_seat,if(b0,1,0),if(b0,1-1/number_of_empty_seats,1/number_of_empty_seats))].
+                b0 -> enter_plane(true,false).Plane(everybody_has_his_own_seat,number_of_empty_seats-1)
+% b1 is true if the next passenger happens to sit on the place of the first passenger.
+                   <>dist b1:Bool[if(b1,1/number_of_empty_seats,1-1/number_of_empty_seats)].
+                      enter_plane(false,b1).
+                        Plane(if(number_of_empty_seats==1,everybody_has_his_own_seat,b1), 
+                              number_of_empty_seats-1));
+              
+
+% If b is true, the first passenger takes his own place. This
+% has probability 1/N. Otherwise he occupies another place.
+init dist b:Bool[if(b,1/N,(N-1)/N)].Plane(b,N-1);

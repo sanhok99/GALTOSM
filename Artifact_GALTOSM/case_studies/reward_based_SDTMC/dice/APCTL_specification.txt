@@ -1,0 +1,1 @@
+(E=?[(P>=1[X_("ONE" | "TWO" | "THREE" | "FOUR" | "FIVE" | "SIX")(true)])])

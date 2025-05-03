@@ -1,0 +1,34 @@
+#DECLARATION 
+init bot HEAD TAIL ONE TWO THREE FOUR FIVE SIX
+#END
+0 init bot
+1 bot
+2 bot
+3 bot
+4 bot
+5 bot
+6 bot
+7 bot
+8 bot
+9 bot
+10 bot
+11 bot
+12 bot
+13 HEAD
+14 TAIL
+15 HEAD
+16 TAIL
+17 HEAD
+18 TAIL
+19 TAIL
+20 ONE
+21 HEAD
+22 TWO
+23 TAIL
+24 THREE
+25 HEAD
+26 FOUR
+27 TAIL
+28 FIVE
+29 HEAD
+30 SIX

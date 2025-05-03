@@ -1,0 +1,329 @@
+10^2 passengers
+>>> Model building time
+
+lnt.open: checking ``bp_102.lnt''
+/home/lab/boarding_pass/bp_102.lnt:20: warning: "in" parameter pp modified (should be an "in var" parameter)
+
+lnt.open: translating ``bp_102.lnt'' to ``/tmp/lab_lnt.open_cKF9Ra/bp_102.lotos'' ...
+
+lnt.open: calling lotos.open for ``bp_102.lotos'' ...
+lotos.open: using ``/home/lab/cadp/src/open_caesar/generator.c''
+lotos.open: calling ``caesar.adt -debug -silent bp_102''
+lotos.open: calling ``caesar -silent -open bp_102''
+lotos.open: running ``generator /home/lab/boarding_pass/bp_auto_102.bcg'' for ``bp_102.lotos''
+
+real	0m1.478s
+user	0m0.875s
+sys	0m0.633s
+Model building done
+>>> BCG to AUT time
+
+real	0m0.353s
+user	0m0.204s
+sys	0m0.167s
+BCG to AUT done
+>>> Replace time
+
+real	0m0.002s
+user	0m0.002s
+sys	0m0.000s
+Replace done
+>>> AUT to BCG time
+
+real	0m0.066s
+user	0m0.021s
+sys	0m0.015s
+AUT to BCG done
+>>> Model checking time
+bcg_open: using ``/home/lab/cadp/bin.x64/evaluator5.a''
+bcg_open: running ``evaluator5 /home/lab/boarding_pass/bp.mcl'' for ``/home/lab/boarding_pass/bp_102.bcg''
+0.5
+
+TRUE
+
+real	0m0.960s
+user	0m0.452s
+sys	0m0.405s
+Model checking done
+10^3 passengers
+>>> Model building time
+
+lnt.open: checking ``bp_103.lnt''
+/home/lab/boarding_pass/bp_103.lnt:20: warning: "in" parameter pp modified (should be an "in var" parameter)
+
+lnt.open: translating ``bp_103.lnt'' to ``/tmp/lab_lnt.open_xpTfui/bp_103.lotos'' ...
+
+lnt.open: calling lotos.open for ``bp_103.lotos'' ...
+lotos.open: using ``/home/lab/cadp/src/open_caesar/generator.c''
+lotos.open: calling ``caesar.adt -debug -silent bp_103''
+lotos.open: calling ``caesar -silent -open bp_103''
+lotos.open: running ``generator /home/lab/boarding_pass/bp_auto_103.bcg'' for ``bp_103.lotos''
+
+real	0m1.495s
+user	0m0.892s
+sys	0m0.626s
+Model building done
+>>> BCG to AUT time
+
+real	0m0.367s
+user	0m0.201s
+sys	0m0.185s
+BCG to AUT done
+>>> Replace time
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.001s
+Replace done
+>>> AUT to BCG time
+
+real	0m0.067s
+user	0m0.024s
+sys	0m0.014s
+AUT to BCG done
+>>> Model checking time
+bcg_open: using ``/home/lab/cadp/bin.x64/evaluator5.a''
+bcg_open: running ``evaluator5 /home/lab/boarding_pass/bp.mcl'' for ``/home/lab/boarding_pass/bp_103.bcg''
+0.499809
+
+TRUE
+
+real	0m0.978s
+user	0m0.456s
+sys	0m0.423s
+Model checking done
+10^4 passengers
+>>> Model building time
+
+lnt.open: checking ``bp_104.lnt''
+/home/lab/boarding_pass/bp_104.lnt:20: warning: "in" parameter pp modified (should be an "in var" parameter)
+
+lnt.open: translating ``bp_104.lnt'' to ``/tmp/lab_lnt.open_zKvo1d/bp_104.lotos'' ...
+
+lnt.open: calling lotos.open for ``bp_104.lotos'' ...
+lotos.open: using ``/home/lab/cadp/src/open_caesar/generator.c''
+lotos.open: calling ``caesar.adt -debug -silent bp_104''
+lotos.open: calling ``caesar -silent -open bp_104''
+lotos.open: running ``generator /home/lab/boarding_pass/bp_auto_104.bcg'' for ``bp_104.lotos''
+
+real	0m1.624s
+user	0m0.951s
+sys	0m0.709s
+Model building done
+>>> BCG to AUT time
+
+real	0m0.403s
+user	0m0.230s
+sys	0m0.193s
+BCG to AUT done
+>>> Replace time
+
+real	0m0.012s
+user	0m0.010s
+sys	0m0.002s
+Replace done
+>>> AUT to BCG time
+
+real	0m0.087s
+user	0m0.042s
+sys	0m0.014s
+AUT to BCG done
+>>> Model checking time
+bcg_open: using ``/home/lab/cadp/bin.x64/evaluator5.a''
+bcg_open: running ``evaluator5 /home/lab/boarding_pass/bp.mcl'' for ``/home/lab/boarding_pass/bp_104.bcg''
+0.499151
+
+TRUE
+
+real	0m0.989s
+user	0m0.480s
+sys	0m0.405s
+Model checking done
+10^5 passengers
+>>> Model building time
+
+lnt.open: checking ``bp_105.lnt''
+/home/lab/boarding_pass/bp_105.lnt:20: warning: "in" parameter pp modified (should be an "in var" parameter)
+
+lnt.open: translating ``bp_105.lnt'' to ``/tmp/lab_lnt.open_qEmmdu/bp_105.lotos'' ...
+
+lnt.open: calling lotos.open for ``bp_105.lotos'' ...
+lotos.open: using ``/home/lab/cadp/src/open_caesar/generator.c''
+lotos.open: calling ``caesar.adt -debug -silent bp_105''
+lotos.open: calling ``caesar -silent -open bp_105''
+lotos.open: running ``generator /home/lab/boarding_pass/bp_auto_105.bcg'' for ``bp_105.lotos''
+
+real	0m3.048s
+user	0m1.603s
+sys	0m1.472s
+Model building done
+>>> BCG to AUT time
+
+real	0m1.091s
+user	0m0.712s
+sys	0m0.409s
+BCG to AUT done
+>>> Replace time
+
+real	0m0.103s
+user	0m0.086s
+sys	0m0.015s
+Replace done
+>>> AUT to BCG time
+
+real	0m0.264s
+user	0m0.218s
+sys	0m0.018s
+AUT to BCG done
+>>> Model checking time
+bcg_open: using ``/home/lab/cadp/bin.x64/evaluator5.a''
+bcg_open: running ``evaluator5 /home/lab/boarding_pass/bp.mcl'' for ``/home/lab/boarding_pass/bp_105.bcg''
+0.499106
+
+TRUE
+
+real	0m1.311s
+user	0m0.780s
+sys	0m0.429s
+Model checking done
+10^6 passengers
+>>> Model building time
+
+lnt.open: checking ``bp_106.lnt''
+/home/lab/boarding_pass/bp_106.lnt:20: warning: "in" parameter pp modified (should be an "in var" parameter)
+
+lnt.open: translating ``bp_106.lnt'' to ``/tmp/lab_lnt.open_s48iNv/bp_106.lotos'' ...
+
+lnt.open: calling lotos.open for ``bp_106.lotos'' ...
+lotos.open: using ``/home/lab/cadp/src/open_caesar/generator.c''
+lotos.open: calling ``caesar.adt -debug -silent bp_106''
+lotos.open: calling ``caesar -silent -open bp_106''
+lotos.open: running ``generator /home/lab/boarding_pass/bp_auto_106.bcg'' for ``bp_106.lotos''
+
+real	0m8.888s
+user	0m5.048s
+sys	0m3.886s
+Model building done
+>>> BCG to AUT time
+
+real	0m7.497s
+user	0m6.513s
+sys	0m0.935s
+BCG to AUT done
+>>> Replace time
+
+real	0m1.084s
+user	0m0.918s
+sys	0m0.109s
+Replace done
+>>> AUT to BCG time
+
+real	0m2.113s
+user	0m1.976s
+sys	0m0.070s
+AUT to BCG done
+>>> Model checking time
+bcg_open: using ``/home/lab/cadp/bin.x64/evaluator5.a''
+bcg_open: running ``evaluator5 /home/lab/boarding_pass/bp.mcl'' for ``/home/lab/boarding_pass/bp_106.bcg''
+0.499101
+
+TRUE
+
+real	0m5.321s
+user	0m4.615s
+sys	0m0.613s
+Model checking done
+10^7 passengers
+>>> Model building time
+
+lnt.open: checking ``bp_107.lnt''
+/home/lab/boarding_pass/bp_107.lnt:20: warning: "in" parameter pp modified (should be an "in var" parameter)
+
+lnt.open: translating ``bp_107.lnt'' to ``/tmp/lab_lnt.open_t2n7vH/bp_107.lotos'' ...
+
+lnt.open: calling lotos.open for ``bp_107.lotos'' ...
+lotos.open: using ``/home/lab/cadp/src/open_caesar/generator.c''
+lotos.open: calling ``caesar.adt -debug -silent bp_107''
+lotos.open: calling ``caesar -silent -open bp_107''
+lotos.open: running ``generator /home/lab/boarding_pass/bp_auto_107.bcg'' for ``bp_107.lotos''
+
+real	1m12.083s
+user	1m7.795s
+sys	0m4.270s
+Model building done
+>>> BCG to AUT time
+
+real	0m14.631s
+user	0m12.729s
+sys	0m1.754s
+BCG to AUT done
+>>> Replace time
+
+real	0m10.241s
+user	0m9.018s
+sys	0m1.068s
+Replace done
+>>> AUT to BCG time
+
+real	0m20.336s
+user	0m19.684s
+sys	0m0.621s
+AUT to BCG done
+>>> Model checking time
+bcg_open: using ``/home/lab/cadp/bin.x64/evaluator5.a''
+bcg_open: running ``evaluator5 /home/lab/boarding_pass/bp.mcl'' for ``/home/lab/boarding_pass/bp_107.bcg''
+0.499101
+
+TRUE
+
+real	2m51.231s
+user	2m47.619s
+sys	0m3.496s
+Model checking done
+10^8 passengers
+>>> Model building time
+
+lnt.open: checking ``bp_108.lnt''
+/home/lab/boarding_pass/bp_108.lnt:20: warning: "in" parameter pp modified (should be an "in var" parameter)
+
+lnt.open: translating ``bp_108.lnt'' to ``/tmp/lab_lnt.open_TfdfzD/bp_108.lotos'' ...
+
+lnt.open: calling lotos.open for ``bp_108.lotos'' ...
+lotos.open: using ``/home/lab/cadp/src/open_caesar/generator.c''
+lotos.open: calling ``caesar.adt -debug -silent bp_108''
+lotos.open: calling ``caesar -silent -open bp_108''
+lotos.open: running ``generator /home/lab/boarding_pass/bp_auto_108.bcg'' for ``bp_108.lotos''
+
+real	21m17.017s
+user	21m4.998s
+sys	0m10.391s
+Model building done
+>>> BCG to AUT time
+
+real	1m25.581s
+user	1m11.047s
+sys	0m8.536s
+BCG to AUT done
+>>> Replace time
+
+real	1m42.604s
+user	1m31.399s
+sys	0m10.593s
+Replace done
+>>> AUT to BCG time
+
+real	3m21.706s
+user	3m15.793s
+sys	0m5.782s
+AUT to BCG done
+>>> Model checking time
+bcg_open: using ``/home/lab/cadp/bin.x64/evaluator5.a''
+bcg_open: running ``evaluator5 /home/lab/boarding_pass/bp.mcl'' for ``/home/lab/boarding_pass/bp_108.bcg''
+0.499101
+
+TRUE
+
+real	46m37.474s
+user	45m34.985s
+sys	1m2.091s
+Model checking done

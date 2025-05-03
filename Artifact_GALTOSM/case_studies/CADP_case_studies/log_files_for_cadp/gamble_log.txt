@@ -1,0 +1,360 @@
+3 game 10^5 target
+>>> Model building time
+
+lnt.open: checking ``gamble_3_105.lnt''
+
+lnt.open: translating ``gamble_3_105.lnt'' to ``/tmp/lab_lnt.open_sFawv2/gamble_3_105.lotos'' ...
+
+lnt.open: calling lotos.open for ``gamble_3_105.lotos'' ...
+lotos.open: using ``(direct) caesar''
+lotos.open: calling ``caesar.adt -debug -silent gamble_3_105''
+lotos.open: calling ``caesar -silent gamble_3_105''
+
+real	0m2.152s
+user	0m1.491s
+sys	0m0.712s
+Model building done
+>>> BCG to AUT time
+
+real	0m0.484s
+user	0m0.290s
+sys	0m0.215s
+BCG to AUT done
+>>> Replace time
+
+real	0m0.330s
+user	0m0.134s
+sys	0m0.022s
+Replace done
+>>> AUT to BCG time
+
+real	0m0.394s
+user	0m0.341s
+sys	0m0.022s
+AUT to BCG done
+>>> Model checking time
+bcg_open: using ``/home/lab/cadp/bin.x64/evaluator5.a''
+bcg_open: running ``evaluator5 /home/lab/gamble/gamble.mcl'' for ``/home/lab/gamble/gamble_3_105.bcg''
+0.999999
+
+TRUE
+
+real	0m2.013s
+user	0m1.466s
+sys	0m0.447s
+Model checking done
+5 game 10^5 target
+>>> Model building time
+
+lnt.open: checking ``gamble_5_105.lnt''
+
+lnt.open: translating ``gamble_5_105.lnt'' to ``/tmp/lab_lnt.open_2PdmFz/gamble_5_105.lotos'' ...
+
+lnt.open: calling lotos.open for ``gamble_5_105.lotos'' ...
+lotos.open: using ``(direct) caesar''
+lotos.open: calling ``caesar.adt -debug -silent gamble_5_105''
+lotos.open: calling ``caesar -silent gamble_5_105''
+
+real	0m2.321s
+user	0m1.657s
+sys	0m0.709s
+Model building done
+>>> BCG to AUT time
+
+real	0m0.511s
+user	0m0.308s
+sys	0m0.220s
+BCG to AUT done
+>>> Replace time
+
+real	0m0.443s
+user	0m0.174s
+sys	0m0.032s
+Replace done
+>>> AUT to BCG time
+
+real	0m0.503s
+user	0m0.445s
+sys	0m0.028s
+AUT to BCG done
+>>> Model checking time
+bcg_open: using ``/home/lab/cadp/bin.x64/evaluator5.a''
+bcg_open: running ``evaluator5 /home/lab/gamble/gamble.mcl'' for ``/home/lab/gamble/gamble_5_105.bcg''
+0.999999
+
+TRUE
+
+real	0m2.684s
+user	0m2.137s
+sys	0m0.434s
+Model checking done
+3 game 10^6 target
+>>> Model building time
+
+lnt.open: checking ``gamble_3_106.lnt''
+
+lnt.open: translating ``gamble_3_106.lnt'' to ``/tmp/lab_lnt.open_1XHD06/gamble_3_106.lotos'' ...
+
+lnt.open: calling lotos.open for ``gamble_3_106.lotos'' ...
+lotos.open: using ``(direct) caesar''
+lotos.open: calling ``caesar.adt -debug -silent gamble_3_106''
+lotos.open: calling ``caesar -silent gamble_3_106''
+
+real	0m6.228s
+user	0m5.541s
+sys	0m0.730s
+Model building done
+>>> BCG to AUT time
+
+real	0m1.512s
+user	0m1.205s
+sys	0m0.331s
+BCG to AUT done
+>>> Replace time
+
+real	0m1.566s
+user	0m1.379s
+sys	0m0.167s
+Replace done
+>>> AUT to BCG time
+
+real	0m3.378s
+user	0m3.253s
+sys	0m0.095s
+AUT to BCG done
+>>> Model checking time
+bcg_open: using ``/home/lab/cadp/bin.x64/evaluator5.a''
+bcg_open: running ``evaluator5 /home/lab/gamble/gamble.mcl'' for ``/home/lab/gamble/gamble_3_106.bcg''
+0.999999
+
+TRUE
+
+real	0m14.097s
+user	0m13.286s
+sys	0m0.721s
+Model checking done
+5 game 10^6 target
+>>> Model building time
+
+lnt.open: checking ``gamble_5_106.lnt''
+
+lnt.open: translating ``gamble_5_106.lnt'' to ``/tmp/lab_lnt.open_M7Cd9o/gamble_5_106.lotos'' ...
+
+lnt.open: calling lotos.open for ``gamble_5_106.lotos'' ...
+lotos.open: using ``(direct) caesar''
+lotos.open: calling ``caesar.adt -debug -silent gamble_5_106''
+lotos.open: calling ``caesar -silent gamble_5_106''
+
+real	0m7.912s
+user	0m7.171s
+sys	0m0.750s
+Model building done
+>>> BCG to AUT time
+
+real	0m1.859s
+user	0m1.483s
+sys	0m0.340s
+BCG to AUT done
+>>> Replace time
+
+real	0m2.110s
+user	0m1.818s
+sys	0m0.228s
+Replace done
+>>> AUT to BCG time
+
+real	0m4.525s
+user	0m4.348s
+sys	0m0.121s
+AUT to BCG done
+>>> Model checking time
+bcg_open: using ``/home/lab/cadp/bin.x64/evaluator5.a''
+bcg_open: running ``evaluator5 /home/lab/gamble/gamble.mcl'' for ``/home/lab/gamble/gamble_5_106.bcg''
+0.999999
+
+TRUE
+
+real	0m21.745s
+user	0m20.824s
+sys	0m0.819s
+Model checking done
+3 game 10^7 target
+>>> Model building time
+
+lnt.open: checking ``gamble_3_107.lnt''
+
+lnt.open: translating ``gamble_3_107.lnt'' to ``/tmp/lab_lnt.open_i2ffZJ/gamble_3_107.lotos'' ...
+
+lnt.open: calling lotos.open for ``gamble_3_107.lotos'' ...
+lotos.open: using ``(direct) caesar''
+lotos.open: calling ``caesar.adt -debug -silent gamble_3_107''
+lotos.open: calling ``caesar -silent gamble_3_107''
+
+real	1m23.247s
+user	1m22.001s
+sys	0m1.290s
+Model building done
+>>> BCG to AUT time
+
+real	0m12.331s
+user	0m10.506s
+sys	0m1.528s
+BCG to AUT done
+>>> Replace time
+
+real	0m15.930s
+user	0m13.883s
+sys	0m1.660s
+Replace done
+>>> AUT to BCG time
+
+real	0m33.840s
+user	0m32.953s
+sys	0m0.857s
+AUT to BCG done
+>>> Model checking time
+bcg_open: using ``/home/lab/cadp/bin.x64/evaluator5.a''
+bcg_open: running ``evaluator5 /home/lab/gamble/gamble.mcl'' for ``/home/lab/gamble/gamble_3_107.bcg''
+0.999999
+
+TRUE
+
+real	5m33.759s
+user	5m27.275s
+sys	0m6.337s
+Model checking done
+5 game 10^7 target
+>>> Model building time
+
+lnt.open: checking ``gamble_5_107.lnt''
+
+lnt.open: translating ``gamble_5_107.lnt'' to ``/tmp/lab_lnt.open_Qnk1tJ/gamble_5_107.lotos'' ...
+
+lnt.open: calling lotos.open for ``gamble_5_107.lotos'' ...
+lotos.open: using ``(direct) caesar''
+lotos.open: calling ``caesar.adt -debug -silent gamble_5_107''
+lotos.open: calling ``caesar -silent gamble_5_107''
+
+real	1m39.025s
+user	1m37.684s
+sys	0m1.390s
+Model building done
+>>> BCG to AUT time
+
+real	0m15.417s
+user	0m13.282s
+sys	0m1.977s
+BCG to AUT done
+>>> Replace time
+
+real	0m21.551s
+user	0m18.952s
+sys	0m2.310s
+Replace done
+>>> AUT to BCG time
+
+real	0m45.257s
+user	0m43.978s
+sys	0m1.206s
+AUT to BCG done
+>>> Model checking time
+bcg_open: using ``/home/lab/cadp/bin.x64/evaluator5.a''
+bcg_open: running ``evaluator5 /home/lab/gamble/gamble.mcl'' for ``/home/lab/gamble/gamble_5_107.bcg''
+0.999999
+
+TRUE
+
+real	7m32.130s
+user	7m20.630s
+sys	0m11.321s
+Model checking done
+3 game 10^8 target
+>>> Model building time
+
+lnt.open: checking ``gamble_3_108.lnt''
+
+lnt.open: translating ``gamble_3_108.lnt'' to ``/tmp/lab_lnt.open_1zPz1Y/gamble_3_108.lotos'' ...
+
+lnt.open: calling lotos.open for ``gamble_3_108.lotos'' ...
+lotos.open: using ``(direct) caesar''
+lotos.open: calling ``caesar.adt -debug -silent gamble_3_108''
+lotos.open: calling ``caesar -silent gamble_3_108''
+
+real	25m14.446s
+user	25m3.577s
+sys	0m10.373s
+Model building done
+>>> BCG to AUT time
+
+real	1m55.489s
+user	1m43.717s
+sys	0m11.520s
+BCG to AUT done
+>>> Replace time
+
+real	2m43.160s
+user	2m20.365s
+sys	0m16.839s
+Replace done
+>>> AUT to BCG time
+
+real	5m40.271s
+user	5m31.083s
+sys	0m9.009s
+AUT to BCG done
+>>> Model checking time
+bcg_open: using ``/home/lab/cadp/bin.x64/evaluator5.a''
+bcg_open: running ``evaluator5 /home/lab/gamble/gamble.mcl'' for ``/home/lab/gamble/gamble_3_108.bcg''
+0.999999
+
+TRUE
+
+real	77m21.742s
+user	75m28.744s
+sys	1m52.998s
+Model checking done
+5 game 10^8 target
+>>> Model building time
+
+lnt.open: checking ``gamble_5_108.lnt''
+
+lnt.open: translating ``gamble_5_108.lnt'' to ``/tmp/lab_lnt.open_MdvtVX/gamble_5_108.lotos'' ...
+
+lnt.open: calling lotos.open for ``gamble_5_108.lotos'' ...
+lotos.open: using ``(direct) caesar''
+lotos.open: calling ``caesar.adt -debug -silent gamble_5_108''
+lotos.open: calling ``caesar -silent gamble_5_108''
+
+real	32m44.206s
+user	32m5.685s
+sys	0m24.054s
+Model building done
+>>> BCG to AUT time
+
+real	2m28.518s
+user	2m10.878s
+sys	0m15.065s
+BCG to AUT done
+>>> Replace time
+
+real	3m40.082s
+user	3m6.152s
+sys	0m22.309s
+Replace done
+>>> AUT to BCG time
+
+real	7m37.361s
+user	7m23.916s
+sys	0m13.306s
+AUT to BCG done
+>>> Model checking time
+bcg_open: using ``/home/lab/cadp/bin.x64/evaluator5.a''
+bcg_open: running ``evaluator5 /home/lab/gamble/gamble.mcl'' for ``/home/lab/gamble/gamble_5_108.bcg''
+0.999999
+
+TRUE
+
+real	89m42.352s
+user	87m31.394s
+sys	2m10.958s
+Model checking done

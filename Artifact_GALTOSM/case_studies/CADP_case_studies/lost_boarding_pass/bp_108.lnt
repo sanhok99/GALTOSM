@@ -1,0 +1,55 @@
+module bp_108 is
+
+!int_bits 32
+
+
+
+channel sitting is
+	(p: real)
+end channel
+
+process MAIN[own_seat, others_seat,last_not_got_seat,last_got_seat:sitting] is
+	unresolved[own_seat, others_seat,last_not_got_seat,last_got_seat](1.0,100000000,1)
+end process
+
+process resolved[last_got_seat: sitting] is
+	loop last_got_seat(1.0 of real) end loop
+end process
+
+
+process unresolved[own_seat, others_seat,last_not_got_seat,last_got_seat:sitting](pp:real,k,i:int) is
+	var own_prob,others_prob: real in
+	
+		others_prob := ((real(k) - real(i)) / (real(k) - real(i) + 1.0)) * ( 1.0 / pp);
+		own_prob := 1.0 - others_prob;
+
+		pp := pp*others_prob;
+		
+		if (k = 1) then
+			own_seat(1.0);
+			resolved[last_got_seat]
+		
+		elsif (i<k-1) then
+			alt
+				own_seat(own_prob);
+				resolved[last_got_seat]
+			[]
+				others_seat(others_prob);
+				unresolved[own_seat, others_seat,last_not_got_seat,last_got_seat](pp,k,i+1)
+			end alt
+			
+		elsif (i = k-1) then
+			alt
+				own_seat(own_prob);
+				resolved[last_got_seat]
+			[]
+				others_seat(others_prob);
+				loop last_not_got_seat(1.0) end loop
+			end alt
+			
+		end if
+	end var
+end process
+
+
+end module

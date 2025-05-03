@@ -1,0 +1,5 @@
+prob
+	(true)*.(DICE6)
+is
+	>= ? 0.00001
+end prob

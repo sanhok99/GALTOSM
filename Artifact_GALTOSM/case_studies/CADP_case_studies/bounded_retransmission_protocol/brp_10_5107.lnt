@@ -1,0 +1,107 @@
+module brp_10_5107 is
+
+!nat_bits 32
+
+channel outcome is
+	(prob:real)
+end channel
+
+
+
+process MAIN[attempt,retry1,retry2,retry3,retry4,retry5,retry6,retry7,retry8,retry9,retry10,success_frame,ack_fail,fail_transmission,success_file:outcome] is
+	sender[attempt,retry1,retry2,retry3,retry4,retry5,retry6,retry7,retry8,retry9,retry10,success_frame,ack_fail,fail_transmission,success_file](1,0,10,50000000) --(packet_no,try_no,MAX_try,MAX_packet)
+end process
+
+-------------------------------------------------------------------------------------------------------------------------
+
+--sender checks the MAX_try try and executes three possibilities, 1) succ 2) nsucc 3) failed(when MAX_try try exausted)
+
+process sender[attempt,retry1,retry2,retry3,retry4,retry5,retry6,retry7,retry8,retry9,retry10,success_frame,ack_fail,fail_transmission,success_file:outcome](packet_no,try_no,MAX_try,MAX_packet:nat) is
+	alt
+		attempt(0.98);
+		receiver[attempt,retry1,retry2,retry3,retry4,retry5,retry6,retry7,retry8,retry9,retry10,success_frame,ack_fail,fail_transmission,success_file](packet_no,try_no,MAX_try,MAX_packet)
+	[]
+		attempt(0.02);
+		repeater[attempt,retry1,retry2,retry3,retry4,retry5,retry6,retry7,retry8,retry9,retry10,success_frame,ack_fail,fail_transmission,success_file](packet_no,try_no+1,MAX_try,MAX_packet)
+	end alt
+end process
+
+-------------------------------------------------------------------------------------------------------------------------
+
+process repeater[attempt,retry1,retry2,retry3,retry4,retry5,retry6,retry7,retry8,retry9,retry10,success_frame,ack_fail,fail_transmission,success_file:outcome](packet_no,try_no,MAX_try,MAX_packet:nat) is
+	if(try_no<=MAX_try) then
+		alt
+			if(try_no = 1) then
+				retry1(0.98)
+			elsif(try_no = 2) then
+				retry2(0.98)
+			elsif(try_no = 3) then
+				retry3(0.98)
+			elsif(try_no = 4) then
+				retry4(0.98)
+			elsif(try_no = 5) then
+				retry5(0.98)
+			elsif(try_no = 6) then
+				retry6(0.98)
+			elsif(try_no = 7) then
+				retry7(0.98)
+			elsif(try_no = 8) then
+				retry8(0.98)
+			elsif(try_no = 9) then
+				retry9(0.98)
+			elsif(try_no = 10) then
+				retry10(0.98)
+			end if;
+			receiver[attempt,retry1,retry2,retry3,retry4,retry5,retry6,retry7,retry8,retry9,retry10,success_frame,ack_fail,fail_transmission,success_file](packet_no,try_no,MAX_try,MAX_packet)
+		[]
+			if(try_no = 1) then
+				retry1(0.02)
+			elsif(try_no = 2) then
+				retry2(0.02)
+			elsif(try_no = 3) then
+				retry3(0.02)
+			elsif(try_no = 4) then
+				retry4(0.02)
+			elsif(try_no = 5) then
+				retry5(0.02)
+			elsif(try_no = 6) then
+				retry6(0.02)
+			elsif(try_no = 7) then
+				retry7(0.02)
+			elsif(try_no = 8) then
+				retry8(0.02)
+			elsif(try_no = 9) then
+				retry9(0.02)
+			elsif(try_no = 10) then
+				retry10(0.02)
+			end if;
+			repeater[attempt,retry1,retry2,retry3,retry4,retry5,retry6,retry7,retry8,retry9,retry10,success_frame,ack_fail,fail_transmission,success_file](packet_no,try_no+1,MAX_try,MAX_packet)
+		end alt
+	else
+		fail_transmission(1.0);
+		loop fail_transmission(1.0) end loop
+	end if
+end process
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+--receiver can send two possible answers, 1) success_frame(successfully sent) and calls for the next packet 2) ack_fail and calls the sender with the same packet
+
+process receiver[attempt,retry1,retry2,retry3,retry4,retry5,retry6,retry7,retry8,retry9,retry10,success_frame,ack_fail,fail_transmission,success_file:outcome](packet_no,try_no,MAX_try,MAX_packet:nat) is
+	alt
+		if(packet_no = MAX_packet) then
+			success_frame(0.99);
+			loop success_file(1.0) end loop
+		else
+			success_frame(0.99);
+			sender[attempt,retry1,retry2,retry3,retry4,retry5,retry6,retry7,retry8,retry9,retry10,success_frame,ack_fail,fail_transmission,success_file](packet_no+1,0,MAX_try,MAX_packet)
+		end if
+	[]
+		ack_fail(0.01);
+		repeater[attempt,retry1,retry2,retry3,retry4,retry5,retry6,retry7,retry8,retry9,retry10,success_frame,ack_fail,fail_transmission,success_file](packet_no,try_no+1,MAX_try,MAX_packet)
+	end alt
+end process
+
+
+end module
