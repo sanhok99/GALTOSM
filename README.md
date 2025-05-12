@@ -1,8 +1,8 @@
-#####################################################################################
+####################################################################################
 
 **ADDENDUM: Based on the initial reviews received from the reviewers (Smoke-Test), a newer version of our artefact has been published. You can go to the old link and navigate to the newer version or use the link https://doi.org/10.5281/zenodo.15373266 for the latest version. The new version additionally contains a Docker image of the STORM model checker and some troubleshooting instructions. Files relating to GALTOSM tool remain unaltered.** 
 
-#####################################################################################
+####################################################################################
 
 
 This artifact accompanies the tool paper titled “GALTOSM: A Graph and Logic Transformation Based Toolkit for Software Model Checking”, submitted to `ATVA 2025` with submission number `5790`. It includes all necessary source codes and a reproduction package supporting the claims made in the paper. Reproducing the case studies requires model checking tools such as `CADP (version 2024-k ”Eindhoven”)` and `STORM (version 1.9.0)`. Although the toolkit also supports integration with PRISM and mCRL2, these tools are not directly involved in the results claimed in the paper.
